@@ -1,0 +1,20 @@
+#recomendacoes h1{
+    font-family: $fonte-principal;
+    color: $branco;
+}
+
+.recomendacao-item{
+    background-color: rgba(0,0,0,0.7);
+    clip-path: polygon(5% 0, 100% 0,95% 100%, 0 100%);
+}
+.recomendacao-item img{
+    width: 150px;
+}
+.recomendacao-nome{
+    color: $branco;
+    font-family: $fonte-principal;
+}
+.recomendacao-texto{
+    font-family: $fonte_texto;
+    text-align: justify;
+}

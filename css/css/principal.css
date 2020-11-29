@@ -1,0 +1,170 @@
+@import url(principal.css);
+.info {
+  background-color: #391005; }
+
+.info a {
+  color: #ffae58;
+  transition: color 0.5 ease-in-out; }
+
+.info a:hover {
+  color: #c94118; }
+
+#logo {
+  font-family: "Lobster", cursive;
+  word-spacing: 0.6rem;
+  color: #ffae58; }
+
+#logo a:hover {
+  text-decoration: none; }
+
+header {
+  min-height: calc(100vh - 94px);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(200, 0, 0, 0.1)), url(../../video/bnanimacao.gif);
+  background-attachment: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative; }
+
+.row-bn {
+  min-height: calc(100vh - 94px); }
+
+.banner h1 {
+  border-top: 4px double #f4f1cb;
+  border-bottom: 4px double #f4f1cb;
+  animation: paraDireita;
+  animation-duration: 3s;
+  animation-fill-mode: forwards; }
+
+@keyframes paraDireita {
+  0% {
+    transform: translateX(-100px);
+    opacity: 0; }
+  50% {
+    transform: translateX(60px); }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+.banner h1 small {
+  color: #f4f1cb;
+  font-family: "Lobster", cursive; }
+
+.banner h1 strong {
+  color: #f1c70a;
+  font-family: "Lobster", cursive; }
+
+.pedir-btn {
+  color: #f4f1cb;
+  background-color: #391005;
+  font-size: 2rem;
+  border: 2px solid #f1c70a;
+  transition: all 0.5s ease-in-out;
+  animation: paraEsquerda;
+  animation-duration: 4s;
+  animation-fill-mode: forwards; }
+
+@keyframes paraEsquerda {
+  0% {
+    transform: translateX(100px);
+    opacity: 0; }
+  50% {
+    transform: translateX(-60px); }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+.btn-adiante {
+  display: inline-block;
+  position: absolute;
+  bottom: 5%;
+  left: 48%;
+  color: #391005;
+  background-color: #ffae58;
+  border-radius: 10px;
+  transition: all 0.6 ease-in-out;
+  animation: paraBaixo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite; }
+
+.btn-adiante:hover {
+  background-color: #f0db00;
+  color: #391005; }
+
+@keyframes paraBaixo {
+  0% {
+    transform: translateY(-10px); }
+  50% {
+    transform: translateY(10px); }
+  100% {
+    transform: translateY(-10px); } }
+.navbar {
+  font-family: "Lobster", cursive;
+  background-color: #391005;
+  padding: 20px 10px;
+  transition: all 2s ease; }
+
+.navbar-background {
+  padding: 5px 20px; }
+
+.navbar-brand img {
+  height: 50px;
+  transition: all .2s ease-in-out; }
+
+.navbar-brand img:hover {
+  transform: scale(1.1); }
+
+.navbar-brand:hover {
+  color: #ffae58; }
+
+.nav-link {
+  color: #ffae58;
+  text-decoration: none;
+  display: inline;
+  transition: all 0.5s ease-in-out;
+  font-size: 23px; }
+
+.nav-link:hover {
+  color: #f1c70a; }
+
+.nav-btn {
+  background-color: #391005;
+  color: #f1c70a;
+  border: 2px solid #7e1819;
+  font-size: 23px;
+  transition: all 1s ease-in-out; }
+
+.nav-btn:hover {
+  color: #391005;
+  border: 2px solid #731819;
+  background-color: #f1c70a;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out; }
+
+.toggler-btn {
+  border: 2px solid #ffae58;
+  padding: 5px;
+  transition: all 1s ease; }
+
+.bar {
+  width: 30px;
+  height: 3px;
+  margin: 5px;
+  background-color: #f0db00;
+  transition: all 1s ease; }
+
+.change .bar1 {
+  transform: rotate(45deg) translate(8px, 5px); }
+
+.change .bar2 {
+  opacity: 0; }
+
+.change .bar3 {
+  transform: rotate(-45deg) translate(6px, -3px); }
+
+body {
+  background-image: url(../../images/bg.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: linear-gradient rgba(12, 12, 12, 0.4); }
+
+/*# sourceMappingURL=principal.css.map */

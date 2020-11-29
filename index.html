@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Renato Dourado">
+    <meta name="description" content="Site desenvolvido em aula">
+    <meta name="keywords" content="curso, frontend, html, css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Bootstrap e Sass-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sass/principal.scss.scss">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+    <!--Ícones-->
+    <script src="https://kit.fontawesome.com/43f0f5be6f.js" crossorigin="anonymous"></script>
+
+    <!--Fontes-->
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lobster&display=swap" rel="stylesheet">
+
+
+    <title>Carne Boa &bullet; Hamburgueria</title>
+
+
+</head>
+
+<body>
+    <!--Inicio header-->
+    <div class="container-fluid p-2 info" id="icones-topo">
+        <div class="row">
+            <div
+                class="col d-flex justify-content-center justify-content-md-between justify-content-sm-between align-items-baseline flex-wrap">
+                <div class="p-2 info-icones">
+                    <a href="#" class="mr-2" alt="facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+                    <a href="#" class="mr-2" alt="instagram"><i class="fab fa-instagram-square fa-2x"></i></a>
+                    <a href="#" class="mr-2" alt="twiter"><i class="fab fa-twitter-square fa-2x"></i></a>
+                    <a href="#" class="mr-2" alt="whatsapp"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+                </div>
+            </div>
+            <h2 id="logo" class="p-2 text-capitalize"><a href="#" title="Voltar ao Inicio">11 91234-5678</a></h2>
+
+        </div>
+
+    </div>
+    <!--Fim header-->
+
+    <!--  Início do Header Principal-->
+
+    <header>
+        <div class="container">
+            <div class="row row-bn align-items-center justify-content-center">
+                <div class="col">
+                    <div class="banner text-center">
+                        <h1 class="display-1 w-47 mx-auto">
+                            <strong>Burgers</strong>
+                            <small>Carne</small>
+                            <strong>Boa</strong>
+
+                        </h1>
+                        <a href="#pedidoModal" class="btn pedir-btn my-2" class="trigger-btn" data-toggle="modal">Faça
+                            seu
+                            Pedido</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#cardapio" title="Próxima Sessão" class="btn btn-adiante"><i class="fas fa-arrow-down"
+                alt="Ir para a próxima Sessão."></i></a>
+    </header>
+    <!--  Fim do Header Principal-->
+
+    <!--  Início do Menu-->
+    <nav class="navbar navbar-expand-lg">
+        <a href="#" class="navbar-brand"><img src="images/logo/ilaranjaescuro.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#minhaNavBar">
+            <div class="toggler-btn">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="minhaNavBar">
+            <ul class="navbar-nav mx-auto">
+
+                <li class="nav-item"><a href="#icones-topo" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#cardapio" class="nav-link">Cardápio</a></li>
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+                <li class="nav-item"><a href="#recomendacoes" class="nav-link">Recomendações</a></li>
+                <li class="nav-item"><a href="#equipe" class="nav-link">Equipe</a></li>
+                <li class="nav-item"><a href="#cozinha" class="nav-link">Cozinha</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contatos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"></a>
+                </li>
+
+            </ul>
+
+            <form class="form-inline d-none d-lg-block mr-5">
+                <a href="#pedidoModal" class="btn nav-btn" class="trigger-btn" data-toggle="modal">Pedir Agora</a>
+            </form>
+        </div>
+    </nav>
+    <!--  Fim do Menu-->
+
+    <!--  Inicio do Cardápio-->
+    <section class="py-5" id="cardapio">
+
+        <!--Início de Pratos e bebidas-->
+        <div class="container my-5">
+            <h1 class="text-center"><i class="fas fa-hamburger"></i> <br> Cardápio</h1>
+
+            <div class="carrosel row parent-container">
+
+                <!--Item 01 do Cardápio-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="images/lanches/ham.png" class="img-fluid img-thumbnail item-img"
+                            alt="imagem do cardápio">
+                        <a href="images/lanches/ham.png">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+                <!--Item 02 do Cardápio-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="images/lanches/dacasa.png" class="img-fluid img-thumbnail item-img"
+                            alt="imagem do cardápio">
+                        <a href="images/lanches/dacasa.png">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+                <!--Item 03 do Cardápio-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="images/lanches/hamb.png" class="img-fluid img-thumbnail item-img"
+                            alt="imagem do cardápio">
+                        <a href="images/lanches/hamb.png">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+                <!--Item 04 do Cardápio-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="images/lanches/veg.png" class="img-fluid img-thumbnail item-img"
+                            alt="imagem do cardápio">
+                        <a href="images/lanches/veg.png">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+                <!--Item 05 do Cardápio-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="images/lanches/xbacon.png" class="img-fluid img-thumbnail item-img"
+                            alt="imagem do cardápio">
+                        <a href="images/lanches/xbacon.png">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--  Fim do Cardápio-->
+
+        <!--Inicio Bebidas-->
+        <div class="container my-5">
+            <h1 class="text-center"><i class="fas fa-glass-cheers"></i> <br> Bebidas</h1>
+
+            <div class="carrosel row parent-container">
+
+                <!--Item 01 do Bebidas-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="images/bebidas/b1.jpeg" class="img-fluid img-thumbnail item-img"
+                            alt="imagem do cardápio">
+                        <a href="images/bebidas/b1.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+                <!--Item 02 do bebidas-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="images/bebidas/b2.jpeg" class="img-fluid img-thumbnail item-img"
+                            alt="imagem do cardápio">
+                        <a href="images/bebidas/b2.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+                <!--Item 03 do Bebidas-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="images/bebidas/b3.jpeg" class="img-fluid img-thumbnail item-img"
+                            alt="imagem do cardápio">
+                        <a href="images/bebidas/b3.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+                <!--Item 04 do Bebidas-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="images/bebidas/b4.jpeg" class="img-fluid img-thumbnail item-img"
+                            alt="imagem do cardápio">
+                        <a href="images/bebidas/b4.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+                <!--Item 05 do Bebidas-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="images/bebidas/b5.jpeg" class="img-fluid img-thumbnail item-img"
+                            alt="imagem do cardápio">
+                        <a href="images/bebidas/b5.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+                <!--Item 06 do Bebidas-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="images/bebidas/b6.jpeg" class="img-fluid img-thumbnail item-img"
+                            alt="imagem do cardápio">
+                        <a href="images/bebidas/b6.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+                <!--Item 07 do Bebidas-->
+                <div class="col-10 mx-auto col-sm-6 col-lg-4 my-3">
+                    <div class="item-container">
+                        <img src="images/bebidas/b7.jpeg" class="img-fluid img-thumbnail item-img"
+                            alt="imagem do cardápio">
+                        <a href="images/bebidas/b7.jpeg">
+                            <h1 class="text-uppercase text-center item-link px-3">Ver Opções</h1>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--Fim Bebidas-->
+    </section>
+    <!--Final do Cardápio-->
+
+    <!--Início Sobre Nós-->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 my-5 sobre-conteudo">
+                    <h1 class="text-uppercase display-5">Sobre Nós</h1>
+                    <h2>
+                        Ambiente descontraido, Ótima localização, Venha nos fazer uma visita ou faça o seu pedido em
+                        nossa página.
+                    </h2>
+                    <a href="#" class="btn pedir-btn my-4">Leia Mais</a>
+                </div>
+                <div class="col-md-5 col-sm-12 fotos-churrascaria">
+                    <img src="images/churrascaria/r1.jpg" alt="Foto de Sobre nós" class="img-thumbnail">
+                    <!--- <img src="images/churrascaria/r2.jpeg" alt="Foto de Sobre nós" class="img-thumbnail">
+                    <img src="images/churrascaria/r3.jpeg" alt="Foto de Sobre nós" class="img-thumbnail">
+                    <img src="images/churrascaria/r4.jpeg" alt="Foto de Sobre nós" class="img-thumbnail">
+                    <img src="images/churrascaria/r5.jpeg" alt="Foto de Sobre nós" class="img-thumbnail">
+                   -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Fim Sobre Nós-->
+
+    <!--Início Equipe-->
+    <section id="equipe">
+        <div class="container">
+            <h1 class="text-center"><i class="fas fa-users"></i><br> Equipe</h1>
+
+            <div class="row">
+                <!--Início Cartão Equipe 01-->
+                <div class="col-md-3 col-sm-6">
+                    <div class="equipe">
+                        <div class="foto">
+                            <img src="images/equipe/e01.jpg" alt="Foto de Funcionário">
+                        </div>
+
+                        <div class="equipe-content">
+                            <h3 class="titulo">Sandra Gomez</h3>
+                            <span class="funcao">Chefe</span>
+                        </div>
+                        <ul class="contatos">
+                            <li><a href="#" class="fab fa-facebook"></a></li>
+                            <li><a href="#" class="fab fa-instagram"></a></li>
+                            <li><a href="#" class="fab fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!--Fim Cartão Equipe 01-->
+
+                <!--Início Cartão Equipe 02-->
+                <div class="col-md-3 col-sm-6">
+                    <div class="equipe">
+                        <div class="foto">
+                            <img src="images/equipe/e02.jpg" alt="Foto de Funcionário">
+                        </div>
+
+                        <div class="equipe-content">
+                            <h3 class="titulo">Henrique Cástan</h3>
+                            <span class="funcao"> Sub-Chefe</span>
+                        </div>
+                        <ul class="contatos">
+                            <li><a href="#" class="fab fa-facebook"></a></li>
+                            <li><a href="#" class="fab fa-instagram"></a></li>
+                            <li><a href="#" class="fab fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!--Fim Cartão Equipe 02-->
+
+                <!--Início Cartão Equipe 03-->
+                <div class="col-md-3 col-sm-6">
+                    <div class="equipe">
+                        <div class="foto">
+                            <img src="images/equipe/e03.jpg" alt="Foto de Funcionário">
+                        </div>
+
+                        <div class="equipe-content">
+                            <h3 class="titulo">Cibele Silva</h3>
+                            <span class="funcao">Sommelier</span>
+                        </div>
+                        <ul class="contatos">
+                            <li><a href="#" class="fab fa-facebook"></a></li>
+                            <li><a href="#" class="fab fa-instagram"></a></li>
+                            <li><a href="#" class="fab fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!--Fim Cartão Equipe 03-->
+
+                <!--Início Cartão Equipe 04-->
+                <div class="col-md-3 col-sm-6">
+                    <div class="equipe">
+                        <div class="foto">
+                            <img src="images/equipe/e04.jpg" alt="Foto de Funcionário">
+                        </div>
+
+                        <div class="equipe-content">
+                            <h3 class="titulo">Gustavo Torres</h3>
+                            <span class="funcao">Bartender</span>
+                        </div>
+                        <ul class="contatos">
+                            <li><a href="#" class="fab fa-facebook"></a></li>
+                            <li><a href="#" class="fab fa-instagram"></a></li>
+                            <li><a href="#" class="fab fa-twitter"></a></li>
+                            <li><a href="#" class="fab fa-linkedin"></a></li>
+                        </ul>
+                    </div>
+
+                </div>
+                <!--Fim Cartão Equipe 04-->
+
+            </div>
+        </div>
+
+    </section>
+    <!--Fim Equipe-->
+
+    <!--Início Nossa Cozinha-->
+    <section id="cozinha" class="py-5">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 fotos-churrascaria " style="transform: rotate(-3deg);">
+                    <img src="images/cozinha/c2.jpeg " alt="Foto da Cozinha" class="img-thumbnail">
+
+                    <!--<img src="images/churrascaria/r2.jpeg" alt="Foto de Sobre nós" class="img-thumbnail">
+                    <img src="images/churrascaria/r3.jpeg" alt="Foto de Sobre nós" class="img-thumbnail">
+                    <img src="images/churrascaria/r4.jpeg" alt="Foto de Sobre nós" class="img-thumbnail">
+                    <img src="images/churrascaria/r5.jpeg" alt="Foto de Sobre nós" class="img-thumbnail">
+                     -->
+                </div>
+                <div class="col-md-7 my-5 sobre-conteudo">
+                    <h1 class="text-uppercase display-5">Nossa Cozinha</h1>
+                    <h2>
+                        Conheça nossa Cozinha, temperada com muito amor.
+                        Cozinhar não é um serviço, é uma forma de AMAR.
+                    </h2>
+                    <a href="#" style="float: right;" class="btn pedir-btn my-4">Leia Mais</a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--Fim Nossa Cozinha-->
+
+
+    <!--Inicio de Recomendações-->
+    <section id="recomendacoes" class="py-5">
+        <h1 class="text-center"><i class="fas fa-users"></i><br> Recomendações</h1>
+        <div class="slider" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <!--Início de Recomendações 01-->
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 mx-auto d-flex recomendacao-item py-3">
+
+                                <div class="align-self-center ml-5">
+                                    <img src="images/recomenda/rec1.png" alt="Cliente"
+                                        class="rounded-circle recomendacao-foto">
+                                </div>
+                                <!--texto da Recomendação-->
+                                <div class="align-self-center recomendacao-nome px-5">
+                                    <h2 class="text-capitalize mb-3">Claudia</h2>
+                                    <p class="recomendacao-texto">Ambiente muito agradável, pessoal muito bem educado e
+                                        atencioso, não demora para ser atendido e os pedidos são entregues rápido.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim de Recomendações 01-->
+                <!--Início de Recomendações 02-->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 mx-auto d-flex recomendacao-item py-3">
+
+                                <div class="align-self-center ml-5">
+                                    <img src="images/recomenda/rec4.png" alt="Cliente"
+                                        class="rounded-circle recomendacao-foto">
+                                </div>
+                                <!--texto da Recomendação-->
+                                <div class="align-self-center recomendacao-nome px-5">
+                                    <h2 class="text-capitalize mb-3">Marcos</h2>
+                                    <p class="recomendacao-texto">Sempre que posso levo minha familia e amigos, um lugar
+                                        incrível e os preços bem em conta.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim de Recomendações 02-->
+                <!--Início de Recomendações 03-->
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-10 mx-auto d-flex recomendacao-item py-3">
+
+                                <div class="align-self-center ml-5">
+                                    <img src="images/recomenda/rec2.png" alt="Cliente"
+                                        class="rounded-circle recomendacao-foto">
+                                </div>
+                                <!--texto da Recomendação-->
+                                <div class="align-self-center recomendacao-nome px-5">
+                                    <h2 class="text-capitalize mb-3">Clara</h2>
+                                    <p class="recomendacao-texto">Ambiente muito agradável, fui bem atendido e os
+                                        pedidos são entregues rápido.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Fim de Recomendações 03-->
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--Fim de Recomendações-->
+
+    <!--Início de Contato-->
+    <section id="contato">
+        <div class="container-fluid no-padding">
+            <div class="row">
+                <div class="col-md-6 my-3">
+                    <div class="embed-responsive by-9 mapa">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29268.672649024986!2d-47.46350507830148!3d-23.511485940227008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1604351724758!5m2!1spt-BR!2sbr"
+                            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+                <div class="col-mo-6 my-3 align-self-center">
+                    <div class="cartao text-center">
+                        <div class="cartao-cabecalho text-uppercase">
+                            <h1 class="text-uppercase">entre em contato</h1>
+                        </div>
+                        <div class="corpo-cartao">
+                            <form>
+                                <!-- Início Grupo de Caixas de texto-->
+                                <div class="input-group my-3">
+                                    <div class="input-group prepend">
+                                        <span class="input-group-text" id="input-text">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                        <input type="text" id="text" class="form-control form-control-lg"
+                                            placeholder="Informe o seu nome...">
+                                    </div>
+                                </div>
+                                <!--Fim Grupo de caixas-->
+
+                                <!-- Início Grupo de Caixas de texto-->
+                                <div class="input-group my-3">
+                                    <div class="input-group prepend">
+                                        <span class="input-group-text" id="input-telefone">
+                                            <i class="fas fa-phone"></i>
+                                        </span>
+                                        <input type="text" id="telefone" class="form-control form-control-lg"
+                                            placeholder="Informe o seu telefone...">
+                                    </div>
+                                </div>
+                                <!--Fim Grupo de caixas-->
+
+                                <!-- Início Grupo de Caixas de texto-->
+                                <div class="input-group my-3">
+                                    <div class="input-group prepend">
+                                        <span class="input-group-text" id="input-email">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                        <input type="text" id="email" class="form-control form-control-lg"
+                                            placeholder="Informe o seu e-mail...">
+                                    </div>
+                                </div>
+                                <!--Fim Grupo de caixas-->
+
+                                <!-- Início Grupo de Caixas de texto-->
+                                <div class="input-group my-3">
+                                    <div class="input-group prepend">
+                                        <textarea rows="2" class="form-control form-control-lg" id="mensagem"
+                                            placeholder="Escreva a sua mensagem..."></textarea>
+                                    </div>
+                                </div>
+                                <!--Fim Grupo de caixas-->
+                                <button type="submit" class="btn btn-block btn-lg contato-btn"><i
+                                        class="far fa-hand-point-right mr-2"></i>ENVIAR</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Fim de Contato-->
+
+    <!--Inicio footer-->
+    <footer>
+        <div class="container-fluid p-2 info" id="icones-topo">
+            <div class="row">
+                <div
+                    class="col d-flex justify-content-center justify-content-md-between justify-content-sm-between align-items-baseline flex-wrap">
+                    <div class="p-2 info-icones">
+                        <a href="#" class="mr-2" alt="facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
+                        <a href="#" class="mr-2" alt="instagram"><i class="fab fa-instagram-square fa-2x"></i></a>
+                        <a href="#" class="mr-2" alt="twiter"><i class="fab fa-twitter-square fa-2x"></i></a>
+                        <a href="#" class="mr-2" alt="whatsapp"><i class="fab fa-whatsapp-square fa-2x"></i></a>
+                        <!--Botão retornar-->
+                        <a href="#icones-topo" id="voltar" title="Voltar ao Inicio"
+                            class=" fas fa-arrow-circle-up fa-3x"></i> </a>
+                    </div>
+                    <h2 id="logo" class="p-2 text-capitalize"><a
+                            href="https://www.linkedin.com/in/renato-dourado-6b39381a7/"> &copy;Renato Dourado</a></h2>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </footer>
+
+
+    <!--Fim footer-->
+
+
+
+    <!--Início pedido modal-->
+    <div id="pedidoModal" class="modal fade">
+        <div class="modal-dialog modal-pedido">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="avatar">
+                        <img src="images/pedir.png" alt="Imagem do Modal Pedir">
+                    </div>
+                    <h4 class="modal-title">Pedido Online</h4>
+                    <button type="button" class="close" data-dismiss="modal" arial-hidden="true">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="nome" placeholder="Digite o seu Nome..."
+                                required="required">
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="3" class="form-control" name="pedido"
+                                placeholder="O que você gostaria de pedir..." required="required"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-lg btn-block login-btn">Pedir</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--Fim pedido modal-->
+
+    <!--Jquery-->
+    <script src="js/jquery-3.5.1.min.js">
+    </script>
+
+    <!--Bootstrap Js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+    <!--Js Próprio-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.mapa{
+    min-height: 60vh;
+    border-radius: 6px;
+}
+#contato .cartao{
+    background-color: rgba(0,0,0,0.4);
+    transition: all 2s ease;
+    border-radius: 20px;
+    padding: 20px;
+}
+#contato .cartao:hover{
+    background-color: $amarelo_escuro;
+}
+.cartao .cartao-cabecalho{
+    color: $branco;
+    font-family: $fonte_principal;
+}
+#contato .input-group-text{
+    background-color: $marrom_escuro;
+    border-color: $marrom_escuro;
+    color: $amarelo_escuro;
+}
+#contato .cartao input::placeholder,
+#contato .cartao textarea::placeholder{
+    color: $marrom_escuro;
+    font-style: italic;
+}
+.contato-btn{
+    color: $amarelo_escuro;
+    background-color: $marrom_escuro;
+    border-color: $amarelo_escuro;
+    transition: all 0.5s ease-in-out;
+}
+.contato-btn:hover{
+    background-color: $laranja_maisClaro;
+    border-color: $marrom_escuro;
+    color: $marrom_escuro;
+}

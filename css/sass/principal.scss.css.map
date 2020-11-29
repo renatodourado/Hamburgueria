@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAqBA,OAAO,CAAP,2DAAO;ACrBP,AAAA,IAAI,CAAA;EACA,gBAAgB,EAAE,OAAe;CACpC",
+    "sources": [
+        "principal.scss.scss",
+        "_header_social.scss"
+    ],
+    "names": [],
+    "file": "principal.scss.css"
+}

@@ -1,0 +1,78 @@
+.navbar{
+    font-family: $fonte_principal;
+    background-color: $marrom_escuro;
+    padding: 20px 10px;
+    transition: all 2s ease;
+}
+
+.navbar-background{
+    padding: 5px 20px;
+}
+.navbar-brand img{
+    height: 50px;
+    transition: all .2s ease-in-out;
+}
+
+.navbar-brand img:hover{
+    transform: scale(1.1);
+}
+.navbar-brand:hover{
+    color: $laranja_maisClaro;
+}
+
+.nav-link{
+    color: $laranja_maisClaro;
+    text-decoration: none;
+    display: inline;
+    transition: all 0.5s ease-in-out;
+    font-size: 23px;
+}
+
+.nav-link:hover{
+    color: $amarelo_escuro;
+}
+
+.nav-btn{
+    background-color: $marrom_escuro;
+    color: $amarelo_escuro;
+    border: 2px solid $vermelho_escuro;
+    font-size: 23px;
+    transition: all 1s ease-in-out;
+}
+
+.nav-btn:hover{
+    color: $marrom_escuro;
+    border: 2px solid $vermelho_claro;
+    background-color: $amarelo_escuro;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+//Menu Mobile
+
+.toggler-btn{
+    border: 2px solid $laranja_maisClaro;
+    padding: 5px;
+    transition: all 1s ease;
+}
+
+
+.bar{
+    width: 30px;
+    height: 3px;
+    margin: 5px;
+    background-color: $amarelo;
+    transition: all 1s ease;
+}
+
+.change .bar1{
+    transform: rotate(45deg) translate(8px, 5px);
+}
+
+.change .bar2{
+    opacity: 0;
+}
+
+.change .bar3{
+    transform: rotate(-45deg) translate(6px, -3px);
+}

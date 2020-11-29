@@ -1,0 +1,17 @@
+
+#voltar{
+    color: $laranja_claro;
+    display: inline-block;
+    transition: all .5s ease;
+    margin-left: 20px;
+}
+#voltar:hover{
+    color: $amarelo_escuro;
+    text-decoration: none;
+}
+
+.scrollTop{
+    position: fixed;
+    bottom: 100px;
+    right: 10px;
+}

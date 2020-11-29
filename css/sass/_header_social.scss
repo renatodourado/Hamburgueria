@@ -1,0 +1,18 @@
+.info{
+    background-color: $marrom_escuro;
+}
+.info a {
+    color: $laranja_maisClaro;
+    transition: color 0.5 ease-in-out;
+}
+.info a:hover{
+    color: $laranja_escuro;
+}
+#logo{
+    font-family: $fonte_principal;
+    word-spacing: 0.6rem;
+    color: $laranja_maisClaro;
+}
+#logo a:hover{
+    text-decoration: none;
+}
